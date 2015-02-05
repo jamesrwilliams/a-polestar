@@ -9,8 +9,6 @@
  *
  */
  
- 
- 
 // Custom variables to control the light levels.
 	var light_intesity = 1;
 	var ambient_light_intensity = 1;
@@ -24,7 +22,7 @@
 	
 	var al_red = 1;
 	var al_green = 1;
-	var al_blue = 1;
+	var al_blue = 0.8;
 	
 	var scene = new THREE.Scene(); 
 	var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 ); 
@@ -104,6 +102,8 @@
 			
 	}
 	
+	leap_message("hello");
+	
 	console.log(debug_text);
 	
 	/*
@@ -147,13 +147,10 @@
 
 	function leap_message(msg){
 		
-		// document.getElementById("screen_console").innerHTML = msg;
+		// TODO Remove jQuery dependancy
 		
-		var container = document.getElementById("screen_console");
-		container.innerHTML = msg;
-
+		$("#screen_console").text(msg);
 	
-		// $("#screen_console").append("<p>" + msg + "</p>");
 		
 	}
 
