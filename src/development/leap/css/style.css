@@ -54,8 +54,6 @@ header:after {
   position: relative;
   height: 500px;
   width: 100%; }
-  #stage img {
-    background: red; }
 
 #screen_console {
   font-family: monospace;

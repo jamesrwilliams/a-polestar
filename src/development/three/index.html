@@ -10,38 +10,49 @@
          <link rel="stylesheet" href="css/style.css">
          </head>
     <body>
-   
-	<style> body { margin: 0; } canvas { width: 100%; height: 100% } </style>
+	    <section id="navigation">
+			
+			<ul>
+				
+				<li><a href="#info">Info Tile</a></li>
+				<li>Link 2</li>
+				<li>Link 3</li>
+				<li>Link 4</li>
+				
+			</ul>
+			
+		</section>
+	<div id="intro" class="tile">
 	
-	<body> <script src="js/min/three.min.js"></script> 
 		
-		<script> 
+		
+		<img id="logo" src="img/ots.svg" height="" width="" />
+		
+		<section id="bio">
 			
-			var imageCanvas2 = document.createElement("canvas");
-			canvg(imageCanvas2, 'images/46.svg');
-			
-			var texture = new THREE.Texture(imageCanvas2);
-			texture.needsUpdate = true;
-			
-			var scene = new THREE.Scene(); var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 ); 
-			var renderer = new THREE.WebGLRenderer(); renderer.setSize( window.innerWidth, window.innerHeight ); document.body.appendChild( renderer.domElement ); 
-			var geometry = new THREE.SphereGeometry( 5, 32, 32 ); 
-			
-			
-			var material = new THREE.MeshBasicMaterial( { color: 0x0000FF, opacity: 0.1 } ); 
-			var cube = new THREE.Mesh( geometry, material ); scene.add( cube ); camera.position.z = 10; 
-			
-			cube.rotation.x += 0.4;
-			
-			var render = function () { requestAnimationFrame( render ); 
+			<article>
 				
-				//cube.rotation.x += 0.1; 
-				cube.rotation.y -= 0.01; 
-				renderer.render(scene, camera); }; 
+				<h3>Interact with me!</h3>
 				
-				render(); 
+				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				
+			</article>
 			
-		</script>
+		</section>
+
+	
+		<section id="stage"><!-- CANVAS ADDED HERE --></section>
+	
+			
+	</div>
+	
+	<div id="info" class="tile">
+		
+	</div>
+	
+	<script src="js/min/three.min.js"></script>
+	<script src="js/min/leap-0.6.4.min.js"></script>
+	<script src="js/min/core-min.js"></script>
     
     </body>
     
