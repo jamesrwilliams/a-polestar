@@ -1,6 +1,6 @@
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
 
@@ -8,9 +8,6 @@ body,
 html {
   height: 100%;
   width: 100%; }
-
-* {
-  -webkit-transform: margin-top 5s ease; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
