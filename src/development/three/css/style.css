@@ -20,9 +20,13 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
-  width: 100px;
+  width: 50%;
+  -webkit-font-smoothing: antialiased;
   font-family: monospace;
-  color: green; }
+  font-weight: bold;
+  color: #00FF00; }
+  #screen_console p {
+    margin: 0; }
 
 canvas {
   width: 100% !important;
@@ -38,4 +42,4 @@ canvas {
 
 #stage {
   background: black;
-  padding-top: 150px; }
+  padding-top: 130px; }
