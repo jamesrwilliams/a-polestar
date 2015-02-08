@@ -128,7 +128,7 @@
 		"outputAbbreviatedPath": "\/src\/development\/three\/js\/min\/core-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
 	"\/src\/development\/three\/js\/min\/core-min.js": {
@@ -137,6 +137,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/development\/three\/js\/min\/core-min.js",
 		"outputAbbreviatedPath": "\/src\/development\/three\/js\/min\/min\/core-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/development\/three\/js\/min\/leap-0.6.4.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/development\/three\/js\/min\/leap-0.6.4.min.js",
+		"outputAbbreviatedPath": "\/src\/development\/three\/js\/min\/min\/leap-0.6.4.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
