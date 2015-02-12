@@ -43,3 +43,24 @@ canvas {
 #stage {
   background: black;
   padding-top: 130px; }
+
+#sensor {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border-left: 5px solid #00FF00;
+  margin-left: 50%; }
+  #sensor .marker {
+    color: white;
+    display: block;
+    height: 25px;
+    line-height: 23px;
+    font-family: monospace;
+    width: 25px;
+    color: black;
+    text-align: center;
+    border: 1px solid white;
+    background: #00FF00;
+    border-radius: 12.5px;
+    position: absolute; }

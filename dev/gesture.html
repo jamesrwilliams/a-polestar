@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+         <link rel="stylesheet" href="css/style.css">
+         </head>
+    <body>
+    
+    <p>Test</p>
+    
+    </body>
+   
+    <script src="../src/vendor/three.min.js"></script>
+	<script src="../src/vendor/LeapTrackballControls.js"></script>
+	<script src="../src/vendor/leap-0.6.4.min.js"></script>
+	
+	 <script>
+	   
+	    var controller = Leap.loop({enableGestures: true}, function(frame){
+		    
+		  if(frame.valid && frame.gestures.length > 0){
+		    frame.gestures.forEach(function(gesture){
+		        switch (gesture.type){
+		          case "keyTap":
+		              console.log("Key Tap Gesture");
+		             // console.log(gesture);
+		              break;
+		          case "screenTap":
+		              console.log("Screen Tap Gesture");
+		              break;
+		          case "swipe":
+		              console.log("Swipe Gesture");
+		              console.log(gesture);
+		              break;
+		        }
+		    });
+		  }
+		});
+	    
+	</script>
+</html>
